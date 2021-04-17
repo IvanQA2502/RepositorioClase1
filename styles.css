@@ -13,9 +13,6 @@ h1{
     margin-bottom: 24px;
 }
 
-h4{
-    color:  #46484c;
-}
 
 p{
     color: #8b8b8bcc;
@@ -24,6 +21,20 @@ p{
 button{
     color: #fff;
     background-color: #025157;
+}
+
+input {
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+}
+
+input, button { 
+    height: 100% ;
+    border-radius: 8px;
+}
+
+form {
+    height: 30px;
 }
 
 .header > *{
@@ -77,9 +88,78 @@ button{
 .main{
     margin: 25px 0;
     text-align: center;
+    margin-top: 200px;
 }
 
 .main .segunda-imagen{
     text-align: center;
     width: 70%;
+    margin: 30px auto;
+}
+
+h4{
+    color:  #46484c;
+}
+
+
+.publish h3{
+    color: #025157;
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+    line-height: 48px; 
+    font-weight: 900;   
+}
+
+.publish {
+    color: #343434;
+    flex: 1;
+}
+
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish .publish-text {
+    display: flex;
+}
+
+.publish .publish-text > p {
+    color: #8b8b8bcc;
+    margin-right: 18px;
+}
+
+
+.promo {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+   margin:  100px auto;
+   align-items: center;
+}
+
+.promo .explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.promo .explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+
+/* Esto funciona para dejar una barra de navegacion fija*/
+
+.fix-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+    
 }
