@@ -160,6 +160,94 @@ h4{
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fffbf7;
-    
+    background-color: #fffbf7;   
 }
+
+
+/* grid es para que se logre crear un area de trabajo en filas y columnas*/
+/* Tambien se puede usar :  grid-template-columns: 300px 300 o  grid-template-columns: repeat(2, 1fr) 
+o grid-template-rows: repeat(2, 330px); */
+/* Esto es para indicar por separado columnas y filas:
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+*/
+
+.features {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2 , 1fr);
+    height: 660px;
+    background-color: #025157;
+    padding: 5% 10%;
+}
+
+.features .feature-card {
+    background-color: #fff;
+    margin: 0 15px 30px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.features .feature-card .feature-content {
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+
+.features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.features .feature-card .feature-content img {
+    width: 50px;
+
+}
+
+.features .feature-card .feature-content figure {
+  margin-left: 0;
+}
+
+.features .feature-card .feature-content h3 {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+.features .feature-card .feature-content p {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+.features .feature-card .feature-content a {
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* position: relative; Esta propiedad es para mover la imagen dentro del flujo donde se encuentre*/
+
+.features .feature-card .feature-image {
+    flex: 1;
+    position: relative;
+    width: 40%;
+    right: -50px;    
+    height: 80%;
+    transition: right 1s;
+}
+
+.features .feature-card .feature-image:hover {
+    right: 2px;
+}
+
+.features .feature-card .feature-image figure,
+.features .feature-card .feature-image img {
+    margin-top: 0;
+    height: 100%;
+}
+
+
